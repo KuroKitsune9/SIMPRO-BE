@@ -108,32 +108,10 @@ cd SIMPRO-BE
 go mod tidy
 ```
 
-### 3️⃣ Configure Environment
-
-Create `.env` file:
-
-```env
-APP_PORT=8080
-
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=simpro
-DB_USER=root
-DB_PASS=
-
-JWT_SECRET=simpro-secret-key
-```
-
 ### 4️⃣ Create Database
 
 ```sql
 CREATE DATABASE simpro;
-```
-
-### 5️⃣ Import Schema
-
-```bash
-mysql -u root -p simpro < schema.sql
 ```
 
 ### 6️⃣ Run Application
@@ -141,13 +119,6 @@ mysql -u root -p simpro < schema.sql
 ```bash
 go run cmd/server/main.go
 ```
-
-Application will be available at:
-
-```text
-http://localhost:8080
-```
-
 ---
 
 ## 🔐 Authentication
