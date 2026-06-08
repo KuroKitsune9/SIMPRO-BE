@@ -1,6 +1,10 @@
 # Environment
 .env
 
+# postman
+.postman
+/postman
+
 # Build
 *.exe
 *.exe~

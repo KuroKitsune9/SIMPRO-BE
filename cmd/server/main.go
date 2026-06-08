@@ -11,6 +11,7 @@ import (
 func main() {
 
 	config.LoadEnv()
+	config.ConnectDB()
 
 	r := gin.Default()
 
